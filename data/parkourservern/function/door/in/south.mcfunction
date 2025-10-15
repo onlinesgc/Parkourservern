@@ -1,1 +1,1 @@
-$execute positioned ~ ~1.5 ~ as @a[distance=..1,y_rotation=-20..20,scores={Slantar=$(Slantar)..}] run tp @s ~ ~ ~2
+$execute positioned ~ ~1.5 ~ as @a[distance=..1,y_rotation=-20..20] if score @s Slantar matches $(Slantar).. run tp @s ~ ~ ~2
