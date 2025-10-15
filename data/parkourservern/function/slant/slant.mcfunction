@@ -1,0 +1,1 @@
+$execute as @a[gamemode=!spectator,distance=..1.75] run function parkourservern:slant/_slant {"Slant":"$(Slant)"}
