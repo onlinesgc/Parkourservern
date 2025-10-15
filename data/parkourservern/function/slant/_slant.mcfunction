@@ -1,5 +1,7 @@
 title @s times 0 10 20
 
+execute unless score @s Slantar matches 0.. run scoreboard players add @s Slantar 0
+
 #Informers you about receiving Slant
 $execute if score @s Slantar matches $(Slant) run title @s title [{"text":"+1","color":"yellow"}]
 $execute if score @s Slantar matches $(Slant) run title @s subtitle [{"text":"Du tog slanten!"}]
