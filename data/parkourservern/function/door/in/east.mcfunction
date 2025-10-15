@@ -1,0 +1,1 @@
+$execute positioned ~ ~1.5 ~ as @a[distance=..1,y_rotation=-110..-70,scores={Slantar=$(Slantar)..}] run tp @s ~2 ~ ~

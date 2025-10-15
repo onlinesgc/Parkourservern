@@ -1,0 +1,1 @@
+execute positioned ~ ~2 ~ as @a[distance=..1,y_rotation=70..110] run tp @s ~-2 ~ ~
