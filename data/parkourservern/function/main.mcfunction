@@ -1,0 +1,1 @@
+execute as @a if score @s speedrunCountdown matches ..0 at @s run function parkourservern:speedrun/initiate/_speedrun_countdown
