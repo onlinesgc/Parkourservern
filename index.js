@@ -17,6 +17,8 @@ archive.directory('data/', 'data');
 
 archive.finalize();
 
+console.log(process.env.HOST)
+
 sftp.connect({
     host: process.env.HOST,
     port: process.env.PORT,
