@@ -1,0 +1,25 @@
+{
+  "name": "parkourservern",
+  "version": "1.0.0",
+  "description": "Runs in latest 1.21.11 snapshot, to be able to use stopwatch command",
+  "homepage": "https://github.com/onlinesgc/Parkourservern#readme",
+  "bugs": {
+    "url": "https://github.com/onlinesgc/Parkourservern/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onlinesgc/Parkourservern.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "upload": "node index.js"
+  },
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "dotenv": "^17.2.3",
+    "ssh2-sftp-client": "^12.0.1"
+  }
+}
