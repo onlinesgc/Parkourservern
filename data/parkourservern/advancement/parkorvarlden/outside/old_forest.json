@@ -1,0 +1,33 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:dark_oak_leaves"
+      },
+      "title": "Ett gamalt minne",
+      "description": {
+        "text": "En gång i tiden så var det en skog nu är det en lekplats. Hmm kanske gå till lekplatsen?"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "parent":"parkourservern:parkorvarlden/outside",
+    "criteria": {
+      "plats": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": {
+            "location": {
+              "position": {"x":{"min":-1402,"max":-1398},"y":{"min":35,"max":38},"z":{"min":-1117,"max":-1113}}
+            }
+          }
+        }
+      }
+    },
+    "requirements": [
+      [
+        "plats"
+      ]
+    ]
+  }

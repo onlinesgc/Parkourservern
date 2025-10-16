@@ -1,0 +1,33 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:wither_skeleton_skull"
+      },
+      "title": "Det finns ett spooky rum",
+      "description": {
+        "text": "Det finns ett mycket spooky rum, hint en av bossbannorna, bakom en tavla"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "parent": "parkourservern:parkorvarlden/worldtwo",
+    "criteria": {
+      "plats": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": {
+            "location": {
+              "position": {"x":{"min":-1335,"max":-1332},"y":{"min":35,"max":39},"z":{"min":-1329,"max":-1325}}
+            }
+          }
+        }
+      }
+    },
+    "requirements": [
+      [
+        "plats"
+      ]
+    ]
+  }

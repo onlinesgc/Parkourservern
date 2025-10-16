@@ -1,0 +1,33 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:spruce_log"
+      },
+      "title": "Källare",
+      "description": {
+        "text": "Du har hittat en källare!"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "parent":"parkourservern:parkorvarlden/outside",
+    "criteria": {
+      "plats": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": {
+            "location": {
+              "position": {"x":{"min":-1552,"max":-1540},"y":{"min":27,"max":29},"z":{"min":-884,"max":-882}}
+            }
+          }
+        }
+      }
+    },
+    "requirements": [
+      [
+        "plats"
+      ]
+    ]
+  }
