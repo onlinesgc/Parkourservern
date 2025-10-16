@@ -28,3 +28,5 @@ execute store result score @s speedrunSeconds run data get storage speedrun:end 
 execute if score @s speedrunGoal matches 28 run tellraw @a ["",{"selector":"@s"},{"text":" avslutade en speedrun av Fängelsehålorna på ","color":"yellow"},{"score":{"name":"@s","objective":"speedrunMinutes"},"color":"gold"},{"text":" minuter och ","color":"yellow"},{"score":{"name":"@s","objective":"speedrunSeconds"},"color":"gold"},{"text":" sekunder!","color":"yellow"}]
 #World 2
 execute if score @s speedrunGoal matches 52 run tellraw @a ["",{"selector":"@s"},{"text":" avslutade en speedrun av Gruvbyn på ","color":"yellow"},{"score":{"name":"@s","objective":"speedrunMinutes"},"color":"gold"},{"text":" minuter och ","color":"yellow"},{"score":{"name":"@s","objective":"speedrunSeconds"},"color":"gold"},{"text":" sekunder!","color":"yellow"}]
+
+function parkourservern:speedrun/reset/reset
