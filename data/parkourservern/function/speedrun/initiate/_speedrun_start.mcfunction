@@ -4,7 +4,7 @@
  scoreboard players reset @s speedrunCountdownInit
  scoreboard players reset @s globalCountdown
 
- attribute @s jump_strength base set 0.42
+ attribute @s jump_strength base reset
 
 #Starts speedrun timer
  team join Speedrun @s
