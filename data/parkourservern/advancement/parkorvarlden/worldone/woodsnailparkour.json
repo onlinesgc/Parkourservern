@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:oak_button"
+    },
+    "title": "träsniglar med en parkour?",
+    "description": {
+      "text": "I en av korridorerna så hittar du en parkour med träsniglar på golvet?. (Om du klarar den...)"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "parkourservern:parkorvarlden/worldone",
+  "criteria": {
+    "plats": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "position": {"x":{"min":-1459,"max":-1448},"y":{"min":7,"max":18},"z":{"min":-958,"max":-937}}
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "plats"
+    ]
+  ]
+}

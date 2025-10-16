@@ -3,5 +3,13 @@
     "description": "parkourservern",
     "min_format": 90,
     "max_format": 90
+  },
+  "filter": {
+    "block": [
+      {
+        "namespace": "minecraft",
+        "path": "advancements/.*"
+      }
+    ]
   }
 }
