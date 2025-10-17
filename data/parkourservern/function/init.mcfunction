@@ -19,6 +19,7 @@ scoreboard objectives add speedrunSeconds dummy
 scoreboard objectives add timerConstants dummy
 
 scoreboard objectives add reset trigger
+scoreboard objectives add timerCalculator dummy
 
 scoreboard players set oneMinute timerConstants 1200
 
