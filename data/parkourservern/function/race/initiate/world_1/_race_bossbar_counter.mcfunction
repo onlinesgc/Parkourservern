@@ -17,3 +17,4 @@ execute if score bossbarCountdown raceVariables matches 0 run bossbar set race:c
 
 scoreboard players remove bossbarCountdown raceVariables 1
 bossbar set race:countdown visible true
+bossbar set race:countdown players @a
