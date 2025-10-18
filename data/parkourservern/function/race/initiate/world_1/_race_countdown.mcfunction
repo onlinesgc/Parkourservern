@@ -6,5 +6,5 @@ scoreboard players remove preCountdown raceVariables 1
 function parkourservern:race/initiate/world_1/_race_bossbar_counter
 execute unless score preCountdown raceVariables matches ..0 run schedule function parkourservern:race/initiate/world_1/_race_bossbar_counter 30s
 
-execute unless score preCountdown raceVariables matches ..0 run function parkourservern:race/initiate/world_1/_start_race
-execute if score preCountdown raceVariables matches ..0 run schedule function parkourservern:race/initiate/world_1/_race_countdown 60s
+execute if score preCountdown raceVariables matches ..0 run function parkourservern:race/initiate/world_1/_start_race
+execute unless score preCountdown raceVariables matches ..0 run schedule function parkourservern:race/initiate/world_1/_race_countdown 60s
