@@ -1,5 +1,5 @@
-execute if score bossbarCountdown raceVariables matches 3.. run bossbar set race:countdown name ["",{"score":{"name":"preCountdown","objective":"raceVariables"},"bold":true,"color":"aqua"},{"text":" minut till race!","bold":true,"color":"aqua"}]
-execute unless score bossbarCountdown raceVariables matches 3.. run bossbar set race:countdown name ["",{"score":{"name":"preCountdown","objective":"raceVariables"},"bold":true,"color":"aqua"},{"text":" minuter till race!","bold":true,"color":"aqua"}]
+execute unless score bossbarCountdown raceVariables matches 3.. run bossbar set race:countdown name ["",{"score":{"name":"preCountdown","objective":"raceVariables"},"bold":true,"color":"aqua"},{"text":" minut till race!","bold":true,"color":"aqua"}]
+execute if score bossbarCountdown raceVariables matches 3.. run bossbar set race:countdown name ["",{"score":{"name":"preCountdown","objective":"raceVariables"},"bold":true,"color":"aqua"},{"text":" minuter till race!","bold":true,"color":"aqua"}]
 
 
 execute if score bossbarCountdown raceVariables matches 7.. run bossbar set race:countdown color red
