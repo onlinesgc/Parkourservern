@@ -24,6 +24,9 @@ scoreboard objectives add timerCalculator dummy
 
 scoreboard players set oneMinute timerConstants 1200
 
+bossbar add race:countdown {text:"."}
+bossbar set race:countdown max 10
+
 team add Invited
 team modify Invited collisionRule never
 team modify Invited color dark_aqua

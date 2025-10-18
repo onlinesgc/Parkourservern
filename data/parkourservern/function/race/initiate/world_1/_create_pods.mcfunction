@@ -17,5 +17,5 @@ scoreboard players remove podX raceVariables 2
 execute store result storage race:pod x int 1 run scoreboard players get podX raceVariables
 
 #Either does this all over again or proceeds to next function depending on if finished or not
-execute unless score numberOfPods raceVariables < totalNumberOfRaceContestants raceVariables run function parkourservern:race/initiate/_created_pods with storage race:pod
-execute if score numberOfPods raceVariables < totalNumberOfRaceContestants raceVariables run function parkourservern:race/initiate/_create_pods with storage race:pod
+execute unless score numberOfPods raceVariables < totalNumberOfRaceContestants raceVariables run function parkourservern:race/initiate/world_1/_created_pods with storage race:pod
+execute if score numberOfPods raceVariables < totalNumberOfRaceContestants raceVariables run function parkourservern:race/initiate/world_1/_create_pods with storage race:pod
