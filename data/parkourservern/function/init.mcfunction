@@ -17,11 +17,16 @@ scoreboard objectives add speedrunEnd dummy
 scoreboard objectives add speedrunMinutes dummy
 scoreboard objectives add speedrunSeconds dummy
 scoreboard objectives add timerConstants dummy
+scoreboard objectives add raceVariables dummy
 
 scoreboard objectives add reset trigger
 scoreboard objectives add timerCalculator dummy
 
 scoreboard players set oneMinute timerConstants 1200
+
+team add Invited
+team modify Invited collisionRule never
+team modify Invited color dark_aqua
 
 team add Speedrun
 team modify Speedrun collisionRule never
