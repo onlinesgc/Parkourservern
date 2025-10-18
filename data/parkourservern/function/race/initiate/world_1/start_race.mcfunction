@@ -1,4 +1,4 @@
-scoreboard players set preCountdown raceVariables 5
+scoreboard players set preCountdown raceVariables 6
 scoreboard players set bossbarCountdown raceVariables 10
 bossbar set race:countdown style notched_10
 
