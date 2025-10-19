@@ -1,12 +1,12 @@
 scoreboard players add numberOfFinishers raceVariables 1
 
 execute store result score @s speedrunEnd run stopwatch query timer:global 20
-scoreboard players operation @s speedrunEnd -= @s speedrunStart
+scoreboard players operation @s speedrunEnd -= raceStart raceVariables
 
 execute store result storage speedrun:end tickTime int 1 run scoreboard players get @s speedrunEnd
 function parkourservern:tools/_calculate_time
 
-execute if score raceGoal raceVariables matches 28 run tellraw @a ["",{"selector":"@s","color":"gold"},{"text":" kom på plats ","color":"yellow"},{"score":{"name":"numberOfFinishers","objective":"raceVariables"},"color":"green"},{"text":" och klarade Fängelsehålorna på ","color":"yellow"},{"score":{"name":"@s","objective":"speedrunMinutes"},"color":"gold"},{"score":{"name":"@s","objective":"speedrunMinutes"},"color":"yellow"},{"text":" minuter och ","color":"yellow"},{"score":{"name":"@s","objective":"speedrunSeconds"},"color":"gold"},{"text":" sekunder","color":"yellow"}]
+execute if score raceGoal raceVariables matches 28 run tellraw @a ["",{"selector":"@s","color":"gold"},{"text":" kom på plats ","color":"yellow"},{"score":{"name":"numberOfFinishers","objective":"raceVariables"},"color":"green"},{"text":" och klarade Fängelsehålorna på ","color":"yellow"},{"score":{"name":"@s","objective":"speedrunMinutes"},"color":"gold"},{"text":" minuter och ","color":"yellow"},{"score":{"name":"@s","objective":"speedrunSeconds"},"color":"gold"},{"text":" sekunder","color":"yellow"}]
 execute if score raceGoal raceVariables matches 52 run tellraw @a ["",{"selector":"@s","color":"gold"},{"text":" kom på plats ","color":"yellow"},{"score":{"name":"numberOfFinishers","objective":"raceVariables"},"color":"green"},{"text":" och klarade Gruvbyn på ","color":"yellow"},{"score":{"name":"@s","objective":"speedrunMinutes"},"color":"gold"},{"score":{"name":"@s","objective":"speedrunMinutes"},"color":"yellow"},{"text":" minuter och ","color":"yellow"},{"score":{"name":"@s","objective":"speedrunSeconds"},"color":"gold"},{"text":" sekunder","color":"yellow"}]
 execute unless score raceGoal raceVariables matches 28 unless score raceGoal raceVariables matches 52 run tellraw @a ["",{"selector":"@s","color":"gold"},{"text":" kom på plats ","color":"yellow"},{"score":{"name":"numberOfFinishers","objective":"raceVariables"},"color":"green"},{"text":" och klarade racet på ","color":"yellow"},{"score":{"name":"@s","objective":"speedrunMinutes"},"color":"gold"},{"score":{"name":"@s","objective":"speedrunMinutes"},"color":"yellow"},{"text":" minuter och ","color":"yellow"},{"score":{"name":"@s","objective":"speedrunSeconds"},"color":"gold"},{"text":" sekunder","color":"yellow"}]
 
