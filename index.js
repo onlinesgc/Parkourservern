@@ -17,18 +17,18 @@ archive.directory('data/', 'data');
 
 archive.finalize();
 
-console.log(process.env.HOST)
-
-sftp.connect({
-    host: process.env.HOST,
-    port: process.env.PORT,
-    username: process.env.USERNAME,
-    password: process.env.PASSWORD
-}).then(() => {
-    return sftp.put('parkourservern.zip', '/stamsite/datapacks/parkourservern.zip');
-}).then(data => {
-    console.log(data);
-    sftp.end();
-}).catch(err => {
-    console.error(err);
+output.on('close', function() {
+    sftp.connect({
+        host: process.env.HOST,
+        port: process.env.PORT,
+        username: process.env.USERNAME,
+        password: process.env.PASSWORD
+    }).then(() => {
+        return sftp.put('parkourservern.zip', '/stamsite/datapacks/parkourservern.zip');
+    }).then(data => {
+        console.log(data);
+        sftp.end();
+    }).catch(err => {
+        console.error(err);
+    });
 });
