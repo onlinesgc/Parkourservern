@@ -18,6 +18,10 @@ scoreboard objectives add speedrunMinutes dummy
 scoreboard objectives add speedrunSeconds dummy
 scoreboard objectives add timerConstants dummy
 scoreboard objectives add raceVariables dummy
+scoreboard objectives add racePodnumber dummy
+
+scoreboard objectives add raceSlantar dummy
+scoreboard objectives modify raceSlantar displayname "Turnering"
 
 scoreboard objectives add reset trigger
 scoreboard objectives add timerCalculator dummy
@@ -29,8 +33,14 @@ bossbar set race:countdown max 10
 
 team add Invited
 team modify Invited collisionRule never
-team modify Invited color dark_aqua
+team modify Invited color gold
 
 team add Speedrun
 team modify Speedrun collisionRule never
 team modify Speedrun color dark_aqua
+
+team add Race
+team modify Race collisionRule never
+
+team add Normal
+team modify Normal collisionRule never

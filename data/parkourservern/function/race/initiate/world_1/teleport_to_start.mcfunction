@@ -1,0 +1,1 @@
+execute as @p[distance=..2,team=Race] run tp @s -1410.500 36.0 -829.0

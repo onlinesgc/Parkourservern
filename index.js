@@ -21,7 +21,7 @@ output.on('close', function() {
     sftp.connect({
         host: process.env.HOST,
         port: process.env.PORT,
-        username: process.env.USERNAME,
+        username: process.env.SFTPUSERNAME,
         password: process.env.PASSWORD
     }).then(() => {
         return sftp.put('parkourservern.zip', '/stamsite/datapacks/parkourservern.zip');
