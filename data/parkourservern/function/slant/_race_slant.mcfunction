@@ -19,4 +19,4 @@ $execute if score @s raceSlantar matches $(Slant) run scoreboard players add @s 
 
 execute store result storage race:player Player int 1 run scoreboard players get @s racePodnumber
 function parkourservern:race/_update_bossbar with storage race:player
-$execute if score raceGoal raceVariables matches $(Slant) run function parkourservern:race/goal
+$execute if score raceGoal raceVariables matches $(Slant) run function parkourservern:race/_goal
