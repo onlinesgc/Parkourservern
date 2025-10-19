@@ -1,2 +1,3 @@
-$execute as @a[gamemode=!spectator,distance=..1.75,team=!Speedrun] run function parkourservern:slant/_slant {"Slant":"$(Slant)"}
+$execute as @a[gamemode=!spectator,distance=..1.75,team=!Speedrun, team=!Race] run function parkourservern:slant/_slant {"Slant":"$(Slant)"}
 $execute as @a[gamemode=!spectator,distance=..1.75,team=Speedrun] run function parkourservern:slant/_speedrun_slant {"Slant":"$(Slant)"}
+$execute as @a[gamemode=!spectator,distance=..1.75,team=Race] run function parkourservern:slant/_race_slant {"Slant":"$(Slant)"}

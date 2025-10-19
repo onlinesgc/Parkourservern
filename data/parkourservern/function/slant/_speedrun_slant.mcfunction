@@ -15,7 +15,6 @@ $execute unless score @s speedrunSlantar matches $(Slant) if score @s speedrunSl
 $execute unless score @s speedrunSlantar matches $(Slant) if score @s speedrunSlantar matches $(Slant).. run title @s subtitle [{"text":"Redan tagen!"}]
 
 #Gives you slant
-$execute if score @s speedrunSlantar matches $(Slant) run experience add @s 1 levels
 $execute if score @s speedrunSlantar matches $(Slant) run scoreboard players add @s speedrunSlantar 1
 
 $execute if score @s speedrunGoal matches $(Slant) run function parkourservern:speedrun/end/_end
