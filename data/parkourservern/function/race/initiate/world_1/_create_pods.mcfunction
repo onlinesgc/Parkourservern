@@ -1,14 +1,17 @@
 #Sets current pod number
 scoreboard players add numberOfPods raceVariables 1
+execute store result storage race:currentpod podnumber int 1 run scoreboard players get numberOfPods raceVariables
 
-#Creates current pod
+#Creates current pod, with sign with correct number
 $clone -1415 32 -769 -1414 39 -760 $(x) 32 -769
 $execute positioned $(x) 32 -769 run data merge block ~1 38 -763 {front_text:{messages:[{"score":{"name":"numberOfPods","objective":"raceVariables"}},"","",""]}}
 
-#Teleports player into pod
+#Teleports player into pod and disables jumping to ensure constant position when executing relative commands further down the line
 execute as @r[team=Invited,tag=!Teleported] run tag @s add Teleporting
 $execute positioned $(x) 32 -769 run tp @a[tag=Teleporting] ~1 34 -762 180.0 0.0
 execute as @a[tag=Teleporting] run tag @s add Teleported
+execute as @a[tag=Teleporting] run attribute @s jump_strength base set 0
+execute as @a[tag=Teleporting] run function parkourservern:race/initiate/_create_bossbar with storage race:currentpod
 execute as @a[tag=Teleporting] run tag @s remove Teleporting
 
 #Sets x value of next pod cloning position
