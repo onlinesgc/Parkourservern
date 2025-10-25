@@ -17,4 +17,4 @@ $execute unless score @s speedrunSlantar matches $(Slant) if score @s speedrunSl
 #Gives you slant
 $execute if score @s speedrunSlantar matches $(Slant) run scoreboard players add @s speedrunSlantar 1
 
-$execute if score @s speedrunGoal matches $(Slant) run function parkourservern:speedrun/end/_end
+execute if score @s speedrunGoal = @s speedrunSlantar run function parkourservern:speedrun/end/_end

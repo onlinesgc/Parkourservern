@@ -6,3 +6,6 @@ function parkourservern:race/reset/_delete_bossbars
 team empty Race
 scoreboard players reset * raceSlantar
 scoreboard objectives setdisplay sidebar
+
+scoreboard objectives remove raceVariables
+scoreboard objectives add raceVariables dummy
