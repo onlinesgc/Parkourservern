@@ -8,7 +8,7 @@ $execute if score @s speedrunSlantar matches $(Slant) run title @s subtitle [{"t
 
 #Visual and audio effects
 $execute if score @s speedrunSlantar matches $(Slant) run playsound entity.player.levelup neutral @s
-$execute if score @s speedrunSlantar matches $(Slant) run particle heart ~0 ~1.1 ~0 0 0 0 10 1
+$execute if score @s speedrunSlantar matches $(Slant) run particle minecraft:soul_fire_flame ~0 ~1.1 ~0 0 0 0 10 1
 
 #Informs you about already having Slant
 $execute unless score @s speedrunSlantar matches $(Slant) if score @s speedrunSlantar matches $(Slant).. run title @s title [{"text":""}]

@@ -1,6 +1,6 @@
 #Timer to use in all timer related things
 stopwatch create timer:global
-stopwatch restart time:global
+stopwatch restart timer:global
 
 #Creates scoreboard to use in
 scoreboard objectives add globalCountdown dummy
@@ -19,6 +19,10 @@ scoreboard objectives add speedrunSeconds dummy
 scoreboard objectives add timerConstants dummy
 scoreboard objectives add raceVariables dummy
 scoreboard objectives add racePodnumber dummy
+scoreboard objectives add speedrunPodKickTimer dummy
+scoreboard objectives add speedrunStartSlantar dummy
+
+scoreboard objectives add leftGame minecraft.custom:minecraft.leave_game
 
 scoreboard objectives add raceSlantar dummy
 scoreboard objectives modify raceSlantar displayname "Turnering"

@@ -1,9 +1,13 @@
 #Sets start value for Slantar and specifies goal amount
+$scoreboard players set @s speedrunStartSlantar $(Start)
 $scoreboard players set @s speedrunSlantar $(Start)
 $scoreboard players set @s speedrunGoal $(Goal)
 
 #Prevents jumping
 attribute @s minecraft:jump_strength base set 0.0
+
+#Sets glass as a precaution in case last player left through unconventional means
+$execute positioned $(x) $(y) $(z) run setblock ~ ~1 ~-1 glass
 
 #Teleports player into speedrun room thing
 $tp @s $(x) $(y) $(z) 180 0
