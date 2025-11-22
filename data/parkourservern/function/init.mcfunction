@@ -22,6 +22,17 @@ scoreboard objectives add racePodnumber dummy
 scoreboard objectives add speedrunPodKickTimer dummy
 scoreboard objectives add speedrunStartSlantar dummy
 
+
+scoreboard objectives add speedrunCustomTrigger trigger
+scoreboard objectives add speedrunCustom dummy
+scoreboard objectives add speedrunCustomStart dummy
+scoreboard objectives add speedrunCustomEnd dummy
+
+scoreboard objectives add speedrunCustomX dummy
+scoreboard objectives add speedrunCustomY dummy
+scoreboard objectives add speedrunCustomZ dummy
+
+
 scoreboard objectives add leftGame minecraft.custom:minecraft.leave_game
 
 scoreboard objectives add raceSlantar dummy
@@ -48,3 +59,11 @@ team modify Race collisionRule never
 
 team add Normal
 team modify Normal collisionRule never
+
+
+#Number constants, please keep in numbered order
+
+scoreboard objectives add NumberConstants dummy
+
+scoreboard players set 10 NumberConstants 10
+scoreboard players set 100 NumberConstants 100

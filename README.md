@@ -13,7 +13,7 @@ Runs in latest 1.21.11 snapshot, to be able to use stopwatch command
 - [ ] Test for bugs
 - [ ] Add in new advancements and fix bugs in the existing ones 
 - [ ] Fully operational speedrun from tävlingscentret
-- [ ] Optional menu for custom speedrun
+- [x] Optional menu for custom speedrun
 
 
 # Future 

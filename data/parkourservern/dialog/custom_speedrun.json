@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Anpassad Speedrun",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": "Start = Hur många slantar du börjar med\nEnd = Hur många slantar du ska uppnå (1 högre än numret på banan)"
+  },
+  "inputs": [
+    {
+      "type": "minecraft:number_range",
+      "key": "Start",
+      "label": "Start",
+      "start": 1,
+      "end": 51,
+      "step": 1,
+      "initial": 1
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "End",
+      "label": "End",
+      "start": 2,
+      "end": 52,
+      "step": 1,
+      "initial": 52
+    }
+  ],
+  "actions": [
+    {
+      "label": "Klar",
+      "width": 40,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "trigger speedrunCustomTrigger set $(Start)$(End)"
+      }
+    }
+  ]
+}
