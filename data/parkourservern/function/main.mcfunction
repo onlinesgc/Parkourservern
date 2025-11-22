@@ -8,3 +8,5 @@ execute as @a if score @s leftGame matches 1.. run function parkourservern:speed
 
 #To keep collision off
 execute as @a[team=] run team join Normal
+
+function parkourservern:custom_test with storage minecraft:custom
