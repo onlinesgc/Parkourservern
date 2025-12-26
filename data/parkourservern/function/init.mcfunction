@@ -43,6 +43,11 @@ scoreboard objectives add timerCalculator dummy
 
 scoreboard players set oneMinute timerConstants 1200
 
+scoreboard objectives add worldVote dummy
+scoreboard objectives add worldVoted dummy
+scoreboard players reset * worldVote
+scoreboard players reset * worldVoted
+
 bossbar add race:countdown {text:"."}
 bossbar set race:countdown max 10
 
@@ -65,5 +70,11 @@ team modify Normal collisionRule never
 
 scoreboard objectives add NumberConstants dummy
 
+scoreboard players set 2 NumberConstants 2
 scoreboard players set 10 NumberConstants 10
+scoreboard players set 25 NumberConstants 25
 scoreboard players set 100 NumberConstants 100
+scoreboard players set 275 NumberConstants 275
+
+# Voting
+function parkourservern:voting/_spawn_meters
