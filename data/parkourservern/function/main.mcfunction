@@ -9,7 +9,9 @@ execute as @a if score @s speedrunCustomTrigger matches 1.. run function parkour
 
 execute as @a if score @s leftGame matches 1.. run function parkourservern:speedrun/_check_if_left_in_pod
 
+#Voting system
 execute if score active worldVote matches 1 run function parkourservern:voting/_calculate_meters
+execute if score worldRoll worldVote matches 1 run function parkourservern:voting/_roll
 
 #To keep collision off
 execute as @a[team=] run team join Normal

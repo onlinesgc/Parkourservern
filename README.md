@@ -19,3 +19,26 @@ Runs in latest 1.21.11 snapshot, to be able to use stopwatch command
 # Future 
 - [ ] Quest system
 - [ ] Cosmetic system
+
+
+# Functions/Documentation
+
+## Doors
+
+### In
+`/function parkourservern:door/in/<north|east|west|south> {"Slantar":"x"}`
+
+Placed under entrance preassure plate, x = amount of slantar needed to enter. Direction based on traveling direction.
+
+`/function parkourservern:door/spec/in/<north|east|west|south> {"Slantar":"E","x":"A","y":"B","z":"C"}`
+
+Placed under entrance preassure plate for doors that require teleportation. Requires both destination and origin to be rotated as specified.
+E = amount of slantar needed to enter
+A,B,C = x,y,z destination coordinates
+
+`/function parkourservern:door/spec/in/any {"Slantar":"E","x":"A","y":"B","z":"C","x_rot":"Q","y_rot":"W"}`
+
+Placed under entrance preassure plate for doors that require teleportation. Does not check for initial rotation.
+E = amount of slantar needed to enter
+A,B,C = x,y,z destination coordinates
+Q = yaw, W = pitch
