@@ -47,7 +47,7 @@ Placed under entrance pressure plate for doors that require teleportation. Does 
 
 ### Out
 #### Normal out door
-    `/function parkourservern:door/out/<north|east|west|south>`
+    /function parkourservern:door/out/<north|east|west|south>
 Placed under exit pressure plate. Direction based on current traveling direction (not same corresponding entrance function).
 #### Special out door
     /function parkourservern:door/spec/out/<north|east|west|south> {"x":"A","y":"B","z":"C"}
