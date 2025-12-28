@@ -2,7 +2,7 @@ title @s times 0 10 20
 
 execute unless score @s speedrunSlantar matches 0.. run scoreboard players add @s speedrunSlantar 0
 
-#Informers you about receiving Slant
+#Informes you about receiving Slant
 $execute if score @s speedrunSlantar matches $(Slant) run title @s title [{"text":"+1","color":"yellow"}]
 $execute if score @s speedrunSlantar matches $(Slant) run title @s subtitle [{"text":"Du tog speedrun-slanten!"}]
 
@@ -13,6 +13,10 @@ $execute if score @s speedrunSlantar matches $(Slant) run particle minecraft:sou
 #Informs you about already having Slant
 $execute unless score @s speedrunSlantar matches $(Slant) if score @s speedrunSlantar matches $(Slant).. run title @s title [{"text":""}]
 $execute unless score @s speedrunSlantar matches $(Slant) if score @s speedrunSlantar matches $(Slant).. run title @s subtitle [{"text":"Redan tagen!"}]
+
+#Special effects
+#   Level 19 boss sound
+$execute if score @s speedrunSlantar matches $(Slant) if score @s speedrunSlantar matches 19 at @s run playsound block.end_portal.spawn master @s ~ ~ ~
 
 #Gives you slant
 $execute if score @s speedrunSlantar matches $(Slant) run experience add @s 1 levels

@@ -1,0 +1,33 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:red_wool"
+      },
+      "title": "Inte bossrummet?",
+      "description": {
+        "text": "I en av korridorerna så finns det en extra parkour? Hitta den och klara av den!"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "parent": "parkourservern:parkorvarlden/worldone",
+    "criteria": {
+      "plats": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": {
+            "location": {
+              "position": {"x":{"min":-1386,"max":-1371},"y":{"min":13,"max":27},"z":{"min":-984,"max":-968}}
+            }
+          }
+        }
+      }
+    },
+    "requirements": [
+      [
+        "plats"
+      ]
+    ]
+  }
