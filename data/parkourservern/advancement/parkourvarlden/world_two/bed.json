@@ -1,0 +1,33 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:red_bed"
+      },
+      "title": "Dags att sova",
+      "description": {
+        "text": "Det finns ett ställe där man kan ta en tupplur, hint en av bossbannorna"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "parent": "parkourservern:parkorvarlden/worldtwo",
+    "criteria": {
+      "plats": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": {
+            "location": {
+              "position": {"x":{"min":-1348,"max":-1345},"y":{"min":23,"max":26},"z":{"min":-1339,"max":-1337}}
+            }
+          }
+        }
+      }
+    },
+    "requirements": [
+      [
+        "plats"
+      ]
+    ]
+  }

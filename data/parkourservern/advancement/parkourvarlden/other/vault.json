@@ -1,0 +1,33 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:iron_block"
+      },
+      "title": "Vault 14",
+      "description": {
+        "text": "Hitta ett vault och hitta en väg in"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "parent": "parkourservern:parkorvarlden/outside",
+    "criteria": {
+      "plats": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": {
+            "location": {
+              "position": {"x":{"min":-1403,"max":-1397},"y":{"min":42,"max":50},"z":{"min":-1105,"max":-1096}}
+            }
+          }
+        }
+      }
+    },
+    "requirements": [
+      [
+        "plats"
+      ]
+    ]
+  }

@@ -1,0 +1,33 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:anvil"
+      },
+      "title": "Hmm, konstigt korridorer",
+      "description": {
+        "text": "Oj, konstiga korridorer, vad kan finnas på slutet? Kanske en grav"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "parent": "parkourservern:parkorvarlden/worldone",
+    "criteria": {
+      "plats": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": {
+            "location": {
+              "position": {"x":{"min":-1389,"max":-1376},"y":{"min":24,"max":27},"z":{"min":-1131,"max":-1127}}
+            }
+          }
+        }
+      }
+    },
+    "requirements": [
+      [
+        "plats"
+      ]
+    ]
+  }

@@ -1,0 +1,33 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:blue_wool"
+      },
+      "title": "Gå på disco",
+      "description": {
+        "text": "Det finns ett hemligt disco. Gå och ha roligt "
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "parent": "parkourservern:parkorvarlden/worldone",
+    "criteria": {
+      "plats": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": {
+            "location": {
+              "position": {"x":{"min":-1351,"max":-1344},"y":{"min":16,"max":19},"z":{"min":-1117,"max":-1110}}
+            }
+          }
+        }
+      }
+    },
+    "requirements": [
+      [
+        "plats"
+      ]
+    ]
+}
