@@ -49,6 +49,8 @@ scoreboard objectives add worldVoted dummy
 scoreboard players reset * worldVote
 scoreboard players reset * worldVoted
 
+scoreboard objectives add speedrunArmorStandCounter dummy
+
 bossbar add race:countdown {text:"."}
 bossbar set race:countdown max 10
 
