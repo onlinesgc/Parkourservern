@@ -31,7 +31,7 @@ Runs in latest 1.21.11 snapshot, to be able to use stopwatch command
 
 Placed under entrance pressure plate, x = amount of slantar needed to enter. Direction based on current traveling direction.
 #### Special door in
-    /function parkourservern:door/spec/in/<north|east|west|south> {"Slantar":"E","x":"A","y":"B","z":"C"}
+    /function parkourservern:door/in/spec/<north|east|west|south> {"Slantar":"E","x":"A","y":"B","z":"C"}
 
 Placed under entrance pressure plate for doors that require teleportation. Requires both destination and origin to be rotated as specified.  
 - E = amount of slantar needed to enter  
@@ -50,7 +50,7 @@ Placed under entrance pressure plate for doors that require teleportation. Does 
     /function parkourservern:door/out/<north|east|west|south>
 Placed under exit pressure plate. Direction based on current traveling direction (not same corresponding entrance function).
 #### Special out door
-    /function parkourservern:door/spec/out/<north|east|west|south> {"x":"A","y":"B","z":"C"}
+    /function parkourservern:door/out/spec/<north|east|west|south> {"x":"A","y":"B","z":"C"}
 
 Placed under entrance pressure plate for doors that require teleportation. Requires both destination and origin to be rotated as specified.  
 - E = amount of slantar needed to enter  
