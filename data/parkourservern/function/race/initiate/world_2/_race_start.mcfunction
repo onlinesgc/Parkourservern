@@ -11,3 +11,5 @@ execute as @a[team=Race] run function parkourservern:race/initiate/_initial_boss
 
 #Starts speedrun timer
 execute store result score raceStart raceVariables run stopwatch query timer:global 20
+
+effect give @a[team=Race] invisibility 60 1 true

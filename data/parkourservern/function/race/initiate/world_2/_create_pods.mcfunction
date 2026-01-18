@@ -10,6 +10,7 @@ execute as @r[team=Invited,tag=!Teleported] run tag @s add Teleporting
 $execute positioned $(x) 25 -769 run tp @a[tag=Teleporting] ~1 27 -762 180.0 0.0
 execute as @a[tag=Teleporting] run tag @s add Teleported
 execute as @a[tag=Teleporting] run attribute @s jump_strength base set 0
+scoreboard players set bossbarRelativeZero raceVariables 29
 execute as @a[tag=Teleporting] run function parkourservern:race/initiate/_create_bossbar with storage race:currentpod
 execute as @a[tag=Teleporting] run tag @s remove Teleporting
 

@@ -23,6 +23,8 @@ $execute if score @s raceSlantar matches $(Slant) run scoreboard players add @s 
 
 
 #Bossbar updater
+scoreboard players operation @s bossbarValue = @s raceSlantar
+scoreboard players operation @s bossbarValue -= bossbarRelativeZero raceVariables
 execute store result storage race:player Player int 1 run scoreboard players get @s racePodnumber
 function parkourservern:race/_update_bossbar with storage race:player
 

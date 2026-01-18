@@ -19,6 +19,7 @@ scoreboard objectives add speedrunSeconds dummy
 scoreboard objectives add timerConstants dummy
 scoreboard objectives add raceVariables dummy
 scoreboard objectives add racePodnumber dummy
+scoreboard objectives add bossbarValue dummy
 scoreboard objectives add speedrunPodKickTimer dummy
 scoreboard objectives add speedrunStartSlantar dummy
 
@@ -61,9 +62,14 @@ team modify Speedrun color dark_aqua
 
 team add Race
 team modify Race collisionRule never
+team modify Race seeFriendlyInvisibles false
 
 team add Normal
 team modify Normal collisionRule never
+
+team add Finished
+team modify Finished collisionRule never
+team modify Finished color green
 
 
 #Number constants, please keep in numbered order
