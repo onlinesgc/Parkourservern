@@ -10,9 +10,9 @@
       "frame": "goal",
       "show_toast": true,
       "announce_to_chat": false,
-      "hidden": true
+      "hidden": false
     },
-    "parent":"parkourservern:parkorvarlden/outside/old_forest",
+    "parent":"parkourservern:parkourvarlden/other/old_forest",
     "criteria": {
       "plats": {
         "trigger": "minecraft:location",

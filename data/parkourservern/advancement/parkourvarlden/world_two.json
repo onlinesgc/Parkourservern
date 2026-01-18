@@ -5,29 +5,22 @@
       },
       "title": "Värld 2",
       "description": {
-        "text": "Välkommen till villorna!"
+        "text": "Gruvbyn!"
       },
       "frame": "task",
       "show_toast": true,
       "announce_to_chat": false,
       "hidden": false
     },
-    "parent": "parkourservern:parkorvarlden/start",
+  "parent": "parkourservern:parkourvarlden/initial",
     "criteria": {
-      "plats": {
-        "trigger": "minecraft:location",
-        "conditions": {
-          "player": {
-            "location": {
-              "position": {"x":{"min":-1435,"max":-1433},"y":{"min":36,"max":38},"z":{"min":-987,"max":-983}}
-            }
-          }
-        }
+      "initial": {
+        "trigger": "minecraft:tick"
       }
-    },
-    "requirements": [
-      [
-        "plats"
-      ]
+  },
+  "requirements": [
+    [
+      "initial"
     ]
-  }
+  ]
+}

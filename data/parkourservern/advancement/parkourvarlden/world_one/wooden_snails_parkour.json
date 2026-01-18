@@ -3,16 +3,16 @@
     "icon": {
       "id": "minecraft:oak_button"
     },
-    "title": "träsniglar med en parkour?",
+    "title": "Träsniglar med en parkour?",
     "description": {
-      "text": "I en av korridorerna så hittar du en parkour med träsniglar på golvet?. (Om du klarar den...)"
+      "text": "I en av korridorerna hittar du en parkour med träsniglar på golvet"
     },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": false,
     "hidden": false
   },
-  "parent": "parkourservern:parkorvarlden/worldone",
+  "parent": "parkourservern:parkourvarlden/world_one",
   "criteria": {
     "plats": {
       "trigger": "minecraft:location",

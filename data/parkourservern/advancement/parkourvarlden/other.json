@@ -3,23 +3,23 @@
       "icon": {
         "id": "minecraft:dark_oak_leaves"
       },
-      "title": "Ute i världen",
-      "description": "Hitta alla hemligheter i världen",
+      "title": "Runtom i världen",
+      "description": "Platser utanför världarna",
       "frame": "task",
       "show_toast": false,
       "announce_to_chat": false,
       "hidden": false,
       "background": "minecraft:textures/block/stone_brick.png"
     },
-    "parent":"parkourservern:parkorvarlden/start",
+    "parent":"parkourservern:parkourvarlden/initial",
     "criteria": {
-      "start": {
+      "initial": {
         "trigger": "minecraft:tick"
       }
     },
     "requirements": [
       [
-        "start"
+        "initial"
       ]
     ]
   }

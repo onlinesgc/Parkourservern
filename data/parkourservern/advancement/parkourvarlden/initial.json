@@ -9,7 +9,7 @@
         }
       },
       "title": "Start på äventyret",
-      "description": "Hitta alla hemligheter i världen",
+      "description": "Kan du hitta alla hemligheter i världen?",
       "frame": "task",
       "show_toast": true,
       "announce_to_chat": false,

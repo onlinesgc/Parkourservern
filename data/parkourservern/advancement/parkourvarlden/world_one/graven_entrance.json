@@ -12,7 +12,7 @@
       "announce_to_chat": false,
       "hidden": true
     },
-    "parent": "parkourservern:parkorvarlden/worldone/gravenstart",
+    "parent": "parkourservern:parkourvarlden/world_one/graven_start",
     "criteria": {
       "plats": {
         "trigger": "minecraft:location",

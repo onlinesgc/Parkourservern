@@ -5,14 +5,14 @@
       },
       "title": "Inte bossrummet?",
       "description": {
-        "text": "I en av korridorerna så finns det en extra parkour? Hitta den och klara av den!"
+        "text": "I en av korridorerna finns det en extra parkour!"
       },
       "frame": "task",
       "show_toast": true,
       "announce_to_chat": false,
       "hidden": false
     },
-    "parent": "parkourservern:parkorvarlden/worldone",
+    "parent": "parkourservern:parkourvarlden/world_one",
     "criteria": {
       "plats": {
         "trigger": "minecraft:location",

@@ -3,16 +3,16 @@
       "icon": {
         "id": "minecraft:red_bed"
       },
-      "title": "Dags att sova",
+      "title": "Dags att sova!",
       "description": {
-        "text": "Det finns ett ställe där man kan ta en tupplur, hint en av bossbannorna"
+        "text": "Det finns ett ställe där man kan ta en tupplur. Ledtråd: En av bossbanorna"
       },
       "frame": "task",
       "show_toast": true,
       "announce_to_chat": false,
       "hidden": false
     },
-    "parent": "parkourservern:parkorvarlden/worldtwo",
+    "parent": "parkourservern:parkourvarlden/world_two",
     "criteria": {
       "plats": {
         "trigger": "minecraft:location",

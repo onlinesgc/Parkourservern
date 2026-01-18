@@ -1,25 +1,25 @@
-{
+  {
     "display": {
       "icon": {
         "id": "minecraft:mossy_cobblestone"
       },
-      "title": "void parkour",
+      "title": "Wow, du klara den",
       "description": {
-        "text": "Det finns en parkour som är ovan en void, om du klarar den kanske du blir cool"
+        "text": "Cool du är"
       },
-      "frame": "task",
+      "frame": "goal",
       "show_toast": true,
       "announce_to_chat": false,
-      "hidden": false
+      "hidden": true
     },
-    "parent": "parkourservern:parkorvarlden/worldtwo/undergroundparkour",
+    "parent": "parkourservern:parkorvarlden/worldtwo",
     "criteria": {
       "plats": {
         "trigger": "minecraft:location",
         "conditions": {
           "player": {
             "location": {
-              "position": {"x":{"min":-1363,"max":-1354},"y":{"min":-5,"max":-2},"z":{"min":-1321,"max":-1315}}
+              "position": {"x":{"min":-1360,"max":-1354},"y":{"min":-5,"max":-2},"z":{"min":-1291,"max":-1289}}
             }
           }
         }

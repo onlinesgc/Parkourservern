@@ -3,16 +3,16 @@
       "icon": {
         "id": "minecraft:red_wool"
       },
-      "title": "Du klara den!",
+      "title": "Du klarade den!",
       "description": {
-        "text": "bra jobbat!"
+        "text": "Bra jobbat!"
       },
       "frame": "goal",
       "show_toast": true,
       "announce_to_chat": false,
-      "hidden": true
+      "hidden": false
     },
-    "parent": "parkourservern:parkorvarlden/worldone/notboosrrom",
+    "parent": "parkourservern:parkourvarlden/world_one/not_bossroom",
     "criteria": {
       "plats": {
         "trigger": "minecraft:location",

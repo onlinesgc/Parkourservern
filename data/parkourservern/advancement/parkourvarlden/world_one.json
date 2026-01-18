@@ -5,29 +5,22 @@
     },
     "title": "Värld 1",
     "description": {
-      "text": "Välkommen till fängelsehålorna!"
+      "text": "Fängelsehålorna!"
     },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": false,
     "hidden": false
   },
-  "parent": "parkourservern:parkorvarlden/start",
-  "criteria": {
-    "plats": {
-      "trigger": "minecraft:location",
-      "conditions": {
-        "player": {
-          "location": {
-            "position": {"x":{"min":-1414,"max":-1406},"y":{"min":35,"max":43},"z":{"min":-938,"max":-929}}
-          }
-        }
+  "parent": "parkourservern:parkourvarlden/initial",
+    "criteria": {
+      "initial": {
+        "trigger": "minecraft:tick"
       }
-    }
   },
   "requirements": [
     [
-      "plats"
+      "initial"
     ]
   ]
 }
