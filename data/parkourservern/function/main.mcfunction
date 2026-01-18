@@ -15,3 +15,6 @@ execute if score worldRoll worldVote matches 1 run function parkourservern:votin
 
 #To keep collision off
 execute as @a[team=] run team join Normal
+
+#Fall damage fix
+execute as @a run attribute @s fall_damage_multiplier base set 0.9999999
