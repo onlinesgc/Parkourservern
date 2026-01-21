@@ -20,6 +20,7 @@ $execute if score @s speedrunSlantar matches $(Slant) if score @s speedrunSlanta
 
 #Adds slant to total statistics
 $execute if score @s speedrunSlantar matches $(Slant) run scoreboard players add @s statsSpeedrunSlantarTotal 1
+$execute if score @s speedrunSlantar matches $(Slant) run scoreboard players add speedrunSlantarTotal statsGlobal 1
 
 #Gives you slant
 $execute if score @s speedrunSlantar matches $(Slant) run experience add @s 1 levels

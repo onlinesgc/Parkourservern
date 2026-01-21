@@ -89,3 +89,4 @@ function parkourservern:voting/_spawn_meters
 
 #Stats
 scoreboard objectives add statsSpeedrunSlantarTotal dummy "Speedrunslantar (21/01/2026 - Nu)"
+scoreboard objectives add statsGlobal dummy
