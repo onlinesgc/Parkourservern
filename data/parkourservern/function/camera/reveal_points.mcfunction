@@ -1,0 +1,1 @@
+execute at @e[tag=cameraPoint] run particle block_marker{block_state:"minecraft:sniffer_egg"} ~ ~ ~ 0 0 0 0 0 force @s

@@ -1,0 +1,2 @@
+scoreboard players add cosmeticsNextPlayerID globalVariables 1
+scoreboard players operation @s cosmeticsPlayerID = cosmeticsNextPlayerID globalVariables

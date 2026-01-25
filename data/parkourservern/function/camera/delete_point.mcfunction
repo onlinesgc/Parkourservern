@@ -1,0 +1,1 @@
+kill @e[type=marker, tag=cameraPoint, limit=1, sort= nearest, distance= 0..5]

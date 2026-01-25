@@ -18,6 +18,9 @@ $execute unless score @s raceSlantar matches $(Slant) if score @s raceSlantar ma
 #   Level 19 boss sound
 $execute if score @s raceSlantar matches $(Slant) if score @s raceSlantar matches 19 at @s run playsound block.end_portal.spawn master @s ~ ~ ~
 
+#Camera
+$execute if score @s raceSlantar matches $(Slant) run function parkourservern:camera/_update_scores {"Slant":"$(Slant)"}
+
 #Gives you slant
 $execute if score @s raceSlantar matches $(Slant) run scoreboard players add @s raceSlantar 1
 

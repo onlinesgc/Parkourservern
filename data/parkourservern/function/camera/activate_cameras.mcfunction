@@ -1,0 +1,8 @@
+scoreboard players set cameraAuto globalVariables 1
+
+kill @e[type=text_display,tag=camera1]
+
+
+
+scoreboard players set cameraActive globalVariables 1
+execute positioned -1365.10 55.00 -931.49 summon text_display run data merge entity @s {teleport_duration:6,Tags:["camera1"]}

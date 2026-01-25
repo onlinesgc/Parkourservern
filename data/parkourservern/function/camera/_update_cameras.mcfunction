@@ -1,0 +1,1 @@
+execute as @a[tag=cameraTracked] at @s at @e[limit=1,type=marker,sort=nearest,tag=cameraPoint,tag=cameraTracking] run tp @e[tag=camera1,type=text_display] ~ ~ ~ facing entity @s

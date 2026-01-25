@@ -9,3 +9,5 @@ scoreboard objectives setdisplay sidebar
 
 scoreboard objectives remove raceVariables
 scoreboard objectives add raceVariables dummy
+scoreboard players reset * racePlacing
+scoreboard players reset * raceTempPlacing

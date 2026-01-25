@@ -1,0 +1,1 @@
+execute at @s anchored eyes positioned ~ ~1.62 ~ summon marker run tag @s add cameraPoint

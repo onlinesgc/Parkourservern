@@ -1,0 +1,1 @@
+tag @e[tag=cameraPoint,distance=..1.5,limit=1,sort=nearest] add cameraTracking

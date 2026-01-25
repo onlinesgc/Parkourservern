@@ -21,3 +21,6 @@ execute as @a run attribute @s fall_damage_multiplier base set 0.9999999
 
 #Replace iron pressureplates in speedrun
 execute if entity @e[type=armor_stand,tag=counterer] run function parkourservern:speedrun/initiate/_armorstand_counter
+
+#Tick camera updates for race spectator mode
+execute if score cameraActive globalVariables matches 1 run function parkourservern:camera/_main

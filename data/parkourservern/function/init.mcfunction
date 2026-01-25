@@ -5,6 +5,8 @@ stopwatch restart timer:global
 #Creates scoreboard to use in
 scoreboard objectives add globalCountdown dummy
 
+scoreboard objectives add globalVariables dummy
+
 scoreboard objectives add Slantar dummy
 
 scoreboard objectives add speedrunSlantar dummy
@@ -19,6 +21,9 @@ scoreboard objectives add speedrunSeconds dummy
 scoreboard objectives add timerConstants dummy
 scoreboard objectives add raceVariables dummy
 scoreboard objectives add racePodnumber dummy
+scoreboard objectives add racePlacing dummy
+scoreboard objectives add raceTempPlacing dummy
+
 scoreboard objectives add bossbarValue dummy
 scoreboard objectives add speedrunPodKickTimer dummy
 scoreboard objectives add speedrunStartSlantar dummy
@@ -33,6 +38,9 @@ scoreboard objectives add speedrunCustomX dummy
 scoreboard objectives add speedrunCustomY dummy
 scoreboard objectives add speedrunCustomZ dummy
 
+scoreboard objectives add cosmeticsPlayerID dummy
+
+scoreboard objectives add camPlayerSwitched dummy
 
 scoreboard objectives add leftGame minecraft.custom:minecraft.leave_game
 
@@ -83,6 +91,7 @@ scoreboard players set 10 NumberConstants 10
 scoreboard players set 25 NumberConstants 25
 scoreboard players set 100 NumberConstants 100
 scoreboard players set 275 NumberConstants 275
+scoreboard players set 500 NumberConstants 500
 
 # Voting
 function parkourservern:voting/_spawn_meters
