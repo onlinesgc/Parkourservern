@@ -1,4 +1,11 @@
 scoreboard players set cameraAuto globalVariables 1
+scoreboard players reset * cameraTrackingHeat
+scoreboard players reset * cameraTrackingDelay
+tag @e remove cameraHit
+tag @e remove cameraTracking
+tag @e remove cameraTrackingLocked
+
+
 
 kill @e[type=text_display,tag=camera1]
 

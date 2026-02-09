@@ -41,6 +41,8 @@ scoreboard objectives add speedrunCustomZ dummy
 scoreboard objectives add cosmeticsPlayerID dummy
 
 scoreboard objectives add camPlayerSwitched dummy
+scoreboard objectives add cameraTrackingHeat dummy
+scoreboard objectives add cameraTrackingDelay dummy
 
 scoreboard objectives add leftGame minecraft.custom:minecraft.leave_game
 

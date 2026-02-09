@@ -1,1 +1,2 @@
-tag @e[tag=cameraPoint,distance=..1.5,limit=1,sort=nearest] add cameraTracking
+tag @e[tag=cameraPoint,distance=..1.5,limit=1,sort=nearest] add cameraHit
+scoreboard players operation @e[tag=cameraPoint,distance=..1.5,limit=1,sort=nearest] cameraTrackingHeat = @s cameraTrackingHeat
