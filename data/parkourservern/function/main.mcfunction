@@ -24,3 +24,8 @@ execute if entity @e[type=armor_stand,tag=counterer] run function parkourservern
 
 #Tick camera updates for race spectator mode
 execute if score cameraActive globalVariables matches 1 run function parkourservern:camera/_main
+
+#Notification
+execute as @a unless score @s svcNotif matches 1.. run tellraw @s ["",{"text":"Servern har nu stöd för ","color":"green"},{"text":"Simple Voice Chat","underlined":true,"color":"blue","click_event":{"action":"open_url","url":"https://modrinth.com/plugin/simple-voice-chat"}},{"text":"!","color":"green"}]
+execute as @a unless score @s svcNotif matches 1.. at @s run playsound block.note_block.bell master @s ~ ~ ~ 1 1.8 1.0
+scoreboard players set @a svcNotif 1
