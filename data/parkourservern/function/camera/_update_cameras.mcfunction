@@ -1,4 +1,4 @@
-execute as @e unless score @s cameraTrackingHeat matches 0.. run tag @s remove cameraTrackingLocked
+execute as @e[tag=cameraTrackingLocked] unless score @s cameraTrackingHeat matches 0.. run tag @s remove cameraTrackingLocked
 execute as @e[tag=cameraPoint,tag=!cameraTracking] run scoreboard players reset @s cameraTrackingHeat
 execute as @e[tag=cameraPoint,tag=!cameraTrackingLocked] if score @s cameraTrackingHeat <= @e[limit=1,tag=cameraTrackingLocked] cameraTrackingHeat run scoreboard players add @s cameraTrackingHeat 7
 execute as @e[tag=cameraPoint,tag=!cameraTrackingLocked] if score @s cameraTrackingHeat <= @e[limit=1,tag=cameraTrackingLocked] cameraTrackingHeat run tag @s add cameraTrackingLocking
