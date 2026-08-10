@@ -11,7 +11,7 @@
       "key": "Start",
       "label": "Start",
       "start": 1,
-      "end": 51,
+      "end": 54,
       "step": 1,
       "initial": 1
     },
@@ -20,7 +20,7 @@
       "key": "End",
       "label": "End",
       "start": 1,
-      "end": 52,
+      "end": 55,
       "step": 1,
       "initial": 52
     }
