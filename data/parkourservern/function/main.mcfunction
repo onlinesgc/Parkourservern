@@ -7,7 +7,14 @@ execute as @a if score @s reset matches 1.. run function parkourservern:speedrun
 
 execute as @a if score @s speedrunCustomTrigger matches 1.. run function parkourservern:speedrun/initiate/custom/_get_input
 
+#On Login (Except the first one)
 execute as @a if score @s leftGame matches 1.. run function parkourservern:speedrun/_check_if_left_in_pod
+execute as @a if score @s leftGame matches 1.. run function parkourservern:checks/_on_login
+scoreboard players reset @a leftGame
+
+#On Death
+execute as @a if score @s deathCheck matches 1.. run function parkourservern:checks/_on_death
+scoreboard players reset @a deathCheck
 
 #Voting system
 execute if score active worldVote matches 1 run function parkourservern:voting/_calculate_meters
@@ -29,3 +36,5 @@ execute if score cameraActive globalVariables matches 1 run function parkourserv
 execute as @a unless score @s svcNotif matches 1.. run tellraw @s ["",{"text":"Servern har nu stöd för ","color":"green"},{"text":"Simple Voice Chat","underlined":true,"color":"blue","click_event":{"action":"open_url","url":"https://modrinth.com/plugin/simple-voice-chat"}},{"text":"!","color":"green"}]
 execute as @a unless score @s svcNotif matches 1.. at @s run playsound block.note_block.bell master @s ~ ~ ~ 1 1.8 1.0
 scoreboard players set @a svcNotif 1
+
+

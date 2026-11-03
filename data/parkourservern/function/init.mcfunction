@@ -44,6 +44,8 @@ scoreboard objectives add camPlayerSwitched dummy
 scoreboard objectives add cameraTrackingHeat dummy
 scoreboard objectives add cameraTrackingDelay dummy
 
+#Checks for things happening
+scoreboard objectives add deathCheck minecraft.custom:minecraft.deaths
 scoreboard objectives add leftGame minecraft.custom:minecraft.leave_game
 
 scoreboard objectives add raceSlantar dummy
@@ -90,6 +92,7 @@ scoreboard objectives add NumberConstants dummy
 
 scoreboard players set 2 NumberConstants 2
 scoreboard players set 10 NumberConstants 10
+scoreboard players set 18 NumberConstants 18
 scoreboard players set 25 NumberConstants 25
 scoreboard players set 100 NumberConstants 100
 scoreboard players set 275 NumberConstants 275
@@ -104,3 +107,9 @@ scoreboard objectives add statsGlobal dummy
 
 #Notif
 scoreboard objectives add svcNotif dummy
+
+#Goblinhornan
+scoreboard objectives add pekhuiSize dummy
+scoreboard objectives add pekhuiSpeed dummy
+scoreboard objectives add pekhuiJump dummy
+scoreboard objectives add pekhuiGravity dummy
